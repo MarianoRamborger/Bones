@@ -1,0 +1,11 @@
+#footer-div {
+
+    min-height: 150px;
+    background-color: black;
+    display:  flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    width: 100%;
+
+
+}
