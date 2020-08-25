@@ -1,0 +1,89 @@
+
+.hero-image-div {
+    background-image: linear-gradient(  rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("./Image/HeroImage.jpg");
+
+    height: 100vh;
+  
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    position: relative;
+
+}
+
+/*Upper*/
+
+.hero-image-text {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    border: 3px solid green
+
+}
+
+.hero-title {
+    font-size: 50px;
+    color: red;
+ 
+}
+
+
+.outline {
+    text-shadow: -1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px -1px 0 #000,
+    1px -1px 0 #000;
+    /* Ojo, más de 1px de sombra puede verse choppy */
+}
+
+.hero-subtext {
+    font-size: 35px
+}
+
+
+/*  Mid */
+
+
+.hero-image-menu {
+    display: flex;
+    margin-top: 20px;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.hero-image-menu button {
+    width: 150px;
+    height: 60px;
+}
+
+/* Lower */
+
+
+
+
+
+@media screen and (max-width: 500px) {
+
+    .hero-image-div { 
+        background-image: linear-gradient(  rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("./Image/HeroImageMobile.jpg");
+    }
+
+}
+
+
+/* Upper */
+
+
+/* Mid */
+
+.hero-image-menu {
+    flex-flow: column wrap;
+    align-content: center;
+}
+
+
+/* Lower */

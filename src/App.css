@@ -4,17 +4,6 @@
 
 
 
-/* Footer pusher */
-.app-wrapper{
-  display: flex;
-  min-height: 84vh; 
-  flex-direction: column;
-}
-
-.content-wrapper {
-  flex-grow: 1;
-}
-/* Footer pusher */
 
 body {
 

@@ -1,7 +1,11 @@
 import React from 'react';
 
-import Header from './Header/Header.js'
 import Footer from './Footer/Footer.js'
+
+import HeroImage from './HeroImage/HeroImage.js'
+import Comidas from './Comidas/Comidas.js'
+import Contacto from './Contacto/Contacto.js'
+
 import './App.css';
 
 import {
@@ -14,29 +18,28 @@ import {
 
 
 
+
 const App = () => {
   return(
 
     <Router>
 
-     <div className="app-wrapper"> 
-        <Header />
-  
-      <div className="content-wrapper">
+      <Route>
 
-            <Switch>
+          <HeroImage />
 
-            <Route exact path="/">
+          <Comidas id="comidas" title="contacto" />
 
-            <div> TEST </div>
+          <Contacto id="contacto" title="contacto" />
 
+
+          
+
+      
+      </Route>
               
-            </Route>
+        
 
-            </Switch>
-
-        </div>
-      </div>
       
       <Footer />
     </Router>
