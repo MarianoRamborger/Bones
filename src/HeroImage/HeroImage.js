@@ -1,41 +1,92 @@
 import React from 'react'
 import './HeroImage.css'
 
+import { isMobile } from 'react-device-detect'
 
-import {
-    Link as ScrollLink,
-    animateScroll 
-  } from 'react-scroll'
+import FacebookIcon from '@material-ui/icons/Facebook';
+import WhatsAppIcon from '@material-ui/icons/WhatsApp';
+import CallIcon from '@material-ui/icons/Call';
+
   
-
 const HeroImage = () => {
+
+    const smoothScroll = (event) => {
+       
+        document.querySelector(`#${event.target.name}`).scrollIntoView({ behavior: 'smooth' || true })
+
+        // TODO: Safari solo soporta behavior: true. Implementar detección y targeteo directo
+
+    }
+
+
+
     return (
         <div className="hero-image-div">
 
-            <div className="hero-image-text">
-                        
-                    <h1 className="hero-title outline"> ROTISERIA "XXXXXXX" </h1>
 
-                    <p className="hero-subtext outline"> SUBTEXT </p>
-            
-            </div>
+            {
+                isMobile ? 
+                <div className="video-div">
+                    <video autoPlay loop muted id="pizzaVideo"> 
+                        <source src={require("./Video/PizzaMobile.mp4")} type="video/mp4" />
 
-            <div className="hero-image-menu">
+                    </video>
 
-            <ScrollLink activeClass="active" spy={true} smooth={true} offset={-70} duration={500} to="comidas"> Comidas </ScrollLink>
+                </div>
 
-            <ScrollLink activeClass="active" spy={true} smooth={true} offset={-70} duration={500} to="contacto"> Contacto </ScrollLink>
+                :
+                <div className="video-div">
+                    <video autoPlay loop muted id="pizzaVideo"> 
+                        <source src={require("./Video/Pizza.mp4")} type="video/mp4" />
 
-            <ScrollLink> Boton C </ScrollLink>
+                    </video>
+
+                </div>
+
+            }
+
+          
+
+                <div className="overlay-div">
+
+                    <div className="hero-image-text">
+
+        
+                            <h1 className="hero-title outline"> ROTISERIA "XXXXXXX" </h1>
+
+                            <p className="hero-subtext outline"> SUBTEXT </p>
+                    
+                    </div>
+
+                    <div className="hero-image-menu">
+
+                    <button onClick={smoothScroll} name="nosotros" className="outline">  Nosotros   </button>
+                    <button onClick={smoothScroll} name="comidas" className="outline">  Comidas   </button>
+                    <button onClick={smoothScroll} name="contacto" className="outline">  Contacto   </button>
+
+                    
+                
 
 
 
-            </div>
+                    </div>
 
-            <div className="hero-image-social">
+                    <div className="hero-image-social">
 
+               
+                    <FacebookIcon className="outline" />
 
-            </div>
+                    <CallIcon  className="outline"/>
+
+                    <WhatsAppIcon className="outline" />
+                   
+                    
+
+                    </div>
+
+                </div>
+
+          
 
 
 

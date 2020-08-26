@@ -3,7 +3,7 @@ import './Comidas.css'
 
 const Comidas = () => {
     return (
-        <div className="comidas-div">
+        <div className="comidas-div" id="comidas">
                     IMAGEN DE FONDO 2
         </div>
     )

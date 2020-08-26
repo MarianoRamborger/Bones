@@ -1,7 +1,20 @@
 /* Demo height */
 
-.comidas-div {
-    height: 500px;
 
-    background-color: orange;
+
+.comidas-div {
+    background-image: linear-gradient(  rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("./Images/Empanadas.jpg");
+
+    height: 100vh;
+  
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    position: relative;
+
+    margin: 0%;
+
 }

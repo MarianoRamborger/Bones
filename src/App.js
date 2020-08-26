@@ -3,6 +3,7 @@ import React from 'react';
 import Footer from './Footer/Footer.js'
 
 import HeroImage from './HeroImage/HeroImage.js'
+import Nosotros from './Nosotros/Nosotros.js'
 import Comidas from './Comidas/Comidas.js'
 import Contacto from './Contacto/Contacto.js'
 
@@ -28,9 +29,11 @@ const App = () => {
 
           <HeroImage />
 
-          <Comidas id="comidas" title="contacto" />
+          <Nosotros  />
 
-          <Contacto id="contacto" title="contacto" />
+          <Comidas  />
+
+          <Contacto  />
 
 
           
