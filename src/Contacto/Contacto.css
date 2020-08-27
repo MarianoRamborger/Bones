@@ -5,3 +5,7 @@
 
     background-color: red;
 }
+
+.visible {
+    background-color: blue !important
+}

@@ -7,6 +7,26 @@
 
 body {
 
-  background-color: #f9f8fd  
+  background-color: #f9f8fd  ;
+  
+  min-width: 320px;
 }
+
+
+
+
+
+
+/* Shared Animations */
+
+.fade-in {
+	-webkit-animation: fade-in-fwd 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.2s both;
+	        animation: fade-in-fwd 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.2s both;
+}
+
+
+ @-webkit-keyframes fade-in{0%{-webkit-transform:translateZ(-80px);transform:translateZ(-80px);opacity:0}100%{-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}@keyframes fade-in-fwd{0%{-webkit-transform:translateZ(-80px);transform:translateZ(-80px);opacity:0}100%{-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}
+
+
+
 

@@ -1,11 +1,34 @@
 import React from 'react'
 import './Comidas.css'
+import ViSensor from 'react-visibility-sensor'
 
 const Comidas = () => {
+
+    const VisionListener = (isVisible) => {
+        if (isVisible) {
+            ChangeVisibility(true)
+        }
+        if (!isVisible) {
+            ChangeVisibility(false)
+        }
+    }
+    
+
+    const [Visible, ChangeVisibility] = React.useState(false)
+
     return (
-        <div className="comidas-div" id="comidas">
-                    IMAGEN DE FONDO 2
-        </div>
+        <ViSensor onChange={VisionListener}  partialVisibility={true} minTopValue={100} offset={{top: 30}}  >
+
+             <div className="comidas-div" id="nosotros">
+
+                {
+                    Visible ? <h2> FFFFFFFFFFFF </h2> : null
+                }
+
+            </div>
+
+        </ViSensor>
+       
     )
 }
 
