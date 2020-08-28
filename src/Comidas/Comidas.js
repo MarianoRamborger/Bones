@@ -21,9 +21,18 @@ const Comidas = () => {
 
              <div className="comidas-div" id="nosotros">
 
-                {
-                    Visible ? <h2> FFFFFFFFFFFF </h2> : null
-                }
+
+                <div className={"menu-div delayed" + (Visible ? " open" : " closed")}>
+
+                { Visible ? 
+                
+                    <h3 className="menu-title"> </h3>
+                
+                : null}
+
+
+                </div>
+             
 
             </div>
 

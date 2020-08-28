@@ -98,7 +98,7 @@ const Nosotros = () => {
                         <div className="nosotros-text-div fade-in"> 
                         
                           
-                            <h2> TEXTO COVID </h2>      
+                              
 
                         </div>
 

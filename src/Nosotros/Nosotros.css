@@ -12,8 +12,9 @@
     min-height: 100vh;
 
 
-    padding-top: 30px
-
+    padding-top: 30px;
+    padding-bottom: 20px;
+    
 }
 
 .nosotros-text-div {
@@ -29,6 +30,7 @@
    display: flex;
    flex-flow: row wrap;
    justify-content: center;
+   
 
 
   
@@ -40,7 +42,7 @@
     height: 230px;
     
 
-    background-color:  orangered;
+    background-color:  #e62020;
     
     display: flex;
     align-items: center;
@@ -66,7 +68,7 @@
     height: 920px;
     width: 1524px;
     position: absolute;
-    background-color: orangered;
+    background-color: #e62020;
     z-index: 2;
 
     display: flex;
@@ -76,6 +78,7 @@
     font-size: 30px;
     color: white;
 
+    
 
 
 }

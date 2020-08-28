@@ -3,23 +3,52 @@
 
 
 .comidas-div {
-    background-image: linear-gradient(  rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("./Images/Empanadas.jpg");
-
+   
+    background-color: #e62020 ;
     height: 100vh;
-  
-    background-position: center;
-
-    background-repeat: no-repeat;
-
-    background-size: cover;
-
-    position: relative;
-
+    display: flex;
+    flex-flow: column;
+    justify-items: center;
+    align-items: center;
     
-
 }
+
+.menu-div {
+    transition: height 1s, width 2s, transform 2s ease;
+    height: 600px;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    margin: 20px 20px;
+  
+}
+
+
+.closed { 
+    width: 5px;
+    background-color: #31343a;
+}
+
+
+.open {
+    width: 800px;
+    background-color:  #31343a;
+}
+
 
 .comidas-div h2 {
     margin-top: 0px;
     padding-top: 0px;
+}
+
+.menu-title {
+    color: #e0dbd1 ;
+    font-family: Chalky;
+    font-size: 60px
+}
+
+
+@font-face {
+    font-family: Chalky;
+    src: url(./Fonts/Chalk-y\ Sans.otf)
 }
