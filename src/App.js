@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Footer from './Footer/Footer.js'
 
 import HeroImage from './HeroImage/HeroImage.js'
 import Nosotros from './Nosotros/Nosotros.js'
@@ -11,7 +10,7 @@ import './App.css';
 
 import {
   BrowserRouter as Router,
-  Switch,
+
   Route,
   // Redirect,
   //Link
@@ -44,7 +43,7 @@ const App = () => {
         
 
       
-      <Footer />
+
     </Router>
     )
 }

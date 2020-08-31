@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: Helvetica;
 }
 
 
@@ -13,6 +14,11 @@ body {
 }
 
 
+
+@font-face {
+  font-family: Chalk;
+  src: url('./Fonts/chalk.ttf');
+}
 
 
 

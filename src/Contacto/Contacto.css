@@ -1,16 +1,90 @@
 /* Demo height */
 
 .contacto-div {
-    height: 500px;
 
-    background-color: red;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-items: center;
+    background-color: #E68920;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-.visible {
-    background-color: blue !important
-}
+
 
 .contacto-div h2 {
     margin-top: 0px;
     padding-top: 0px;
+}
+
+.phone-icon-div , .email-icon-div , .mas-div{
+
+    background-color: rgba(0,0,0,0.5);
+    
+    font-size: 30px;
+    padding: 10px 25px;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 10px;
+
+    
+    
+}
+
+.phone-icon-div {
+    -webkit-animation:fade-in-bottom .6s cubic-bezier(.39,.575,.565,1.000) both;animation:fade-in-bottom .6s cubic-bezier(.39,.575,.565,1.000) 0.1s both
+}
+
+.email-icon-div {
+    -webkit-animation:fade-in-bottom2 .6s cubic-bezier(.39,.575,.565,1.000) both;animation:fade-in-bottom .6s cubic-bezier(.39,.575,.565,1.000) 0.2s both
+}
+
+.mas-div {
+    -webkit-animation:fade-in-bottom3 .6s cubic-bezier(.39,.575,.565,1.000) both;animation:fade-in-bottom .6s cubic-bezier(.39,.575,.565,1.000) 0.2s both
+}
+
+
+.phone-icon-div p , .email-icon-div p , .mas-div p{ 
+    
+    margin: 0px;
+    margin-left: 30px;
+    color: whitesmoke;
+    
+}
+
+.phone-icon-div svg , .email-icon-div svg{ 
+    
+    color: whitesmoke;
+    font-size: 40px;
+
+  
+}
+
+
+
+
+@-webkit-keyframes fade-in-bottom{0%{-webkit-transform:translateY(50px);transform:translateY(50px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes fade-in-bottom{0%{-webkit-transform:translateY(50px);transform:translateY(50px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
+
+@-webkit-keyframes fade-in-bottom2{0%{-webkit-transform:translateY(50px);transform:translateY(50px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes fade-in-bottom{0%{-webkit-transform:translateY(50px);transform:translateY(50px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
+
+@-webkit-keyframes fade-in-bottom3{0%{-webkit-transform:translateY(50px);transform:translateY(50px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes fade-in-bottom{0%{-webkit-transform:translateY(50px);transform:translateY(50px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
+
+
+
+@media screen and (max-width: 800px) { 
+
+    .phone-icon-div , .email-icon-div , .mas-div {
+        font-size: 20px;
+    }
+
+    .phone-icon-div svg , .email-icon-div svg, .mas-div svg {
+        font-size: 35px;
+    }
+ 
+    
 }

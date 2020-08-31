@@ -9,7 +9,7 @@
     align-content: center;
     align-items: center;
   
-    min-height: 100vh;
+
 
 
     padding-top: 30px;
@@ -70,7 +70,6 @@
     position: absolute;
     background-color: #e62020;
     z-index: 2;
-
     display: flex;
     justify-content: center;
     align-items: center;
