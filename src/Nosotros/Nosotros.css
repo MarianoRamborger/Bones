@@ -9,7 +9,7 @@
     align-content: center;
     align-items: center;
   
-
+    min-height: 100vh;
 
 
     padding-top: 30px;
@@ -130,6 +130,11 @@
         font-size: 20px;
     }
 
+    .nosotros-div { 
+        min-height: 400px;
+   
+    }
+
 }
 
 
@@ -145,6 +150,8 @@
         width: 600px ;
         height: 400px;
     }
+
+   
 
 }
 
@@ -167,7 +174,7 @@
 
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 500px) {
   
     .square, .square img {
         width: 100px ;
@@ -179,6 +186,7 @@
         height: 300px;
     }
 
+   
 
 }
 

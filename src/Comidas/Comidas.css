@@ -49,6 +49,7 @@
 
 .closed { 
     width: 5px;
+    min-height: 300px;
     background-color: #31343a;
 }
 
@@ -95,7 +96,17 @@
 
     }
 
+    
+}
 
 
+@media screen and (max-width: 350px) { 
 
+    .menu-div {
+        width: 310px;
+        border: 5px solid burlywood;
+
+    }
+
+    
 }

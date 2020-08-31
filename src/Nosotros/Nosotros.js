@@ -19,11 +19,11 @@ const Nosotros = () => {
     const VisionListener = (isVisible) => {
         if (isVisible) {
             ChangeVisibility(true)
-            console.log("IM VISIBLE")
+         
         }
         else {
             ChangeVisibility(false)
-            console.log("IM NOT VISIBLE")
+           
         }
     }
     
