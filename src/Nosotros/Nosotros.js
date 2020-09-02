@@ -40,9 +40,14 @@ const Nosotros = () => {
 
                         <div className="institucional-div fade-in-last" >
 
-                            ROTISERIA 
+                            <p> Lo de Vilma </p>
 
-                   
+                            <p> Todo Casero </p>
+
+                            <p> Con ingredientes de primera </p>
+
+                            <p> Atendido por sus dueños </p>
+       
 
                         </div>
                     
@@ -53,7 +58,7 @@ const Nosotros = () => {
                             <div className="square fade-in-0"> <img src={p1} alt="Comida" /> </div>
                             <div className="square fade-in-2">  <p> Rico </p>  </div>
                             <div className="square fade-in-1"> <img src={p2} alt="Comida" /> </div>
-                            <div className="square fade-in-3">  <p> Tentador </p>  </div>
+                            <div className="square fade-in-3">  <p> Artesanal </p>  </div>
                 
                             </div>
                    

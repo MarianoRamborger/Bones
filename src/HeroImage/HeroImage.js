@@ -54,7 +54,7 @@ const HeroImage = () => {
         
                             <h1 className="hero-title outline"> Lo de Vilma </h1>
 
-                            <p className="hero-subtext outline"> SUBTEXT </p>
+                            <p className="hero-subtext outline"> Cocina Artesanal </p>
                     
                     </div>
 

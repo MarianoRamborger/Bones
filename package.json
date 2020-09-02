@@ -16,7 +16,7 @@
     "react-visibility-sensor": "^5.1.1"
   },
   "scripts": {
-    "start": "CI= react-scripts start",
+    "start": " react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

@@ -28,6 +28,10 @@ const Contacto = () => {
 
                     <div>
 
+               
+
+                        
+
                         <div className="phone-icon-div">
                             <PhoneInTalkIcon />
                             <p> XXXXXX-XXXXXXX</p>
@@ -38,11 +42,7 @@ const Contacto = () => {
                             <p> email@emailprovider.com </p>
                         </div>
 
-                        <div className="mas-div">
-                       
-                            <p> mas info? </p>
-                        </div>
-                    
+                   
 
                     </div>
                     
