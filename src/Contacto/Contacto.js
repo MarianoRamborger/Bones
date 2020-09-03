@@ -60,9 +60,17 @@ const Contacto = () => {
                         <p className="contacto-p" > También podés escribirnos por WhatsApp! </p>
 
 
-                        <a href="https://web.whatsapp.com/send?phone=+541136788685" target="blank" className="wap-link" >  
-                        <img src={WapIcon} alt="Logo de WhatsApp"/> 
-                        </a>
+                        {
+                            isMobile ?
+                            <a href="https://wa.me/+541136788685" target="blank" className="wap-link" >  
+                            <img src={WapIcon} alt="Logo de WhatsApp"/> 
+                            </a>
+                            :
+                            <a href="https://web.whatsapp.com/send?phone=+541136788685" target="blank" className="wap-link" >  
+                                <img src={WapIcon} alt="Logo de WhatsApp"/> 
+                            </a>
+                        }
+                      
 
                         <p className="contacto-p"> Consultá por nuestro menú del día y especiales de fin de semana! </p>
                         

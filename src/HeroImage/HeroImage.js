@@ -87,9 +87,19 @@ const HeroImage = () => {
                         }
                         
 
-                        <a href="https://web.whatsapp.com/send?phone=+541136788685" target="blank"  >
-                            <WhatsAppIcon className="outline" />
-                        </a>
+                        {
+                            isMobile ?
+
+                            <a href="https://wa.me/+541136788685" target="blank"  >
+                                <WhatsAppIcon className="outline" />
+                            </a>
+                            :
+                            <a href="https://web.whatsapp.com/send?phone=+541136788685" target="blank"  >
+                                <WhatsAppIcon className="outline" />
+                            </a>
+                        }
+
+                       
                     </div>
                     
 
