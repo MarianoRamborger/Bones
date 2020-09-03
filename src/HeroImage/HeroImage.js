@@ -3,7 +3,7 @@ import './HeroImage.css'
 
 import { isMobile } from 'react-device-detect'
 
-import FacebookIcon from '@material-ui/icons/Facebook';
+
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import CallIcon from '@material-ui/icons/Call';
 
@@ -18,7 +18,9 @@ const HeroImage = () => {
 
     }
 
-
+    const smoothScrollSvg = () => {
+        document.querySelector(`#contacto`).scrollIntoView({ behavior: 'smooth' || true })
+    }
 
     return (
         <div className="hero-image-div">
@@ -74,12 +76,21 @@ const HeroImage = () => {
                     <div className="hero-image-social">
 
                
-                    <FacebookIcon className="outline" />
+               
+                    <div className="social-icons-div">
+                        {
+                            isMobile ? 
+                            
+                            <a className="call-icon-link" href="tel:+541136788685"> <CallIcon  className="outline"/> </a> 
+                            :
+                            <CallIcon onClick={smoothScrollSvg}  name="contacto" className="outline"/>
+                        }
+                        
 
-                    <CallIcon  className="outline"/>
-
-                    <WhatsAppIcon className="outline" />
-                   
+                        <a href="https://web.whatsapp.com/send?phone=+541136788685" target="blank"  >
+                            <WhatsAppIcon className="outline" />
+                        </a>
+                    </div>
                     
 
                     </div>

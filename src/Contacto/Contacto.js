@@ -1,8 +1,13 @@
-import React from 'react'
+import React, {Fragment} from 'react'
 import './Contacto.css'
 import ViSensor from 'react-visibility-sensor'
 import PhoneInTalkIcon from '@material-ui/icons/PhoneInTalk';
-import MailOutlineIcon from '@material-ui/icons/MailOutline';
+
+import { isMobile } from 'react-device-detect'
+import WapIcon from './Images/WapIcon.png'
+
+
+
 
 const Contacto = () => {
 
@@ -26,25 +31,44 @@ const Contacto = () => {
                 {
                     Visible ? 
 
-                    <div>
+                    <Fragment>
 
                
-
+                        
+                        <p className="contacto-p"> Hacé tu pedido llamando al... </p>
                         
 
-                        <div className="phone-icon-div">
-                            <PhoneInTalkIcon />
-                            <p> XXXXXX-XXXXXXX</p>
-                        </div>
 
-                        <div className="email-icon-div">
-                            <MailOutlineIcon />
-                            <p> email@emailprovider.com </p>
-                        </div>
+                        {
+                            isMobile  ?
+                            <a className="phone-icon-div" href="tel:+541136788685">
+                                <PhoneInTalkIcon />
+                                <p> 11 3678 8685</p>
+                            </a>
+                            :
+                            <div className="phone-icon-div">
+                                <PhoneInTalkIcon />
+                                <p> 11 3678 8685</p>
+                            </div>
 
+                        }
+                      
+
+
+
+
+                        <p className="contacto-p" > También podés escribirnos por WhatsApp! </p>
+
+
+                        <a href="https://web.whatsapp.com/send?phone=+541136788685" target="blank" className="wap-link" >  
+                        <img src={WapIcon} alt="Logo de WhatsApp"/> 
+                        </a>
+
+                        <p className="contacto-p"> Consultá por nuestro menú del día y especiales de fin de semana! </p>
+                        
                    
 
-                    </div>
+                    </Fragment>
                     
                     : null
                 }
