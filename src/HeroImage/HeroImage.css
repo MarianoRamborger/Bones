@@ -198,7 +198,12 @@
     .hero-image-div { 
         background-image: linear-gradient(  rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("./Image/HeroImageMobile.jpg");
         min-height: 500px;
+
+        height: 100vh;
+
+        
     }
+    
 
 
 
